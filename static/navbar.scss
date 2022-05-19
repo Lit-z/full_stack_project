@@ -15,19 +15,19 @@ $navbar-toggler-transition:         box-shadow .15s ease-in-out;
 // colours
 // dark-mode
 $navbar-dark-color:                 white;
-$navbar-dark-hover-color:           white;
+$navbar-dark-hover-color:           #062F4F;
 $navbar-dark-active-color:          white;
-$navbar-dark-disabled-color:        white;
-$navbar-dark-toggler-border-color:  white;
-$navbg-dark-color:                  blue;
+$navbar-dark-disabled-color:        grey;
+$navbar-dark-toggler-border-color:  #062F4F;
+$navbg-dark-color:                  #813772;
 
 // light-mode
-$navbar-light-color:                #B82601;
-$navbar-light-hover-color:          #813772;
-$navbar-light-active-color:         white;
-$navbar-light-disabled-color:       white;
-$navbar-light-toggler-border-color: #813772;
-$navbg-light-color:                 #062F4F;
+$navbar-light-color:                #49274A;
+$navbar-light-hover-color:          #94618E;
+$navbar-light-active-color:         #49274A;
+$navbar-light-disabled-color:       grey;
+$navbar-light-toggler-border-color: #94618E;
+$navbg-light-color:                 #F4DECB;
 
 $navbar-light-brand-color:                $navbar-light-active-color;
 $navbar-light-brand-hover-color:          $navbar-light-active-color;

@@ -10,9 +10,13 @@
     <script src="{{url_for('static', filename='app.js')}}"></script>
     <title>Exoplanets</title>
 </head>
-<body>
+
+<body onload="darkCheck()">
     <nav class="navbar sticky-top navbar-expand-lg bg-light">
         <div class="container-fluid">
+          <div class="flex-container-h">
+            <button onclick="darkMode()" id="mode-button" type="button" class="btn btn-outline-info"></button>
+          </div>
           <a class="navbar-brand" href="{{url_for('my_view.home')}}">Exoplanets</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,6 +57,7 @@
           </div>
         </div>
       </nav>
+
 
 {% block content %}
 {% endblock %}

@@ -8,21 +8,33 @@
 }
 
 body{
-    background-color: lightgray;
+    background-color: #F8EEE7;
+    color: #49274A;
 }
 
 h1, h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 3rem;
 }
 
 h3{
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 2.2rem;
 }
 
+h6{
+    @extend h1;
+    font-size:1.5rem;
+    text-align: center;
+}
+
 p{
+    @extend h3;
     font-size: 1.4rem;
 }
 
@@ -60,7 +72,7 @@ p{
         color:#{$navbar-light-hover-color};
     }
     :disabled{
-        color:#{navbar-disabled-color};
+        color:#{navbar-light-disabled-color};
     }
 }
 
@@ -92,18 +104,93 @@ a.anchor{
 }
 
 // text below images
-.img-txt{
+.img-txt, .top-btn{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
+
 
 // table settings
-.col{
-    color: red;
-    background-color: $navbg-light-color;
-    border-color: white;
-    border-radius: 10%;
-    font-size: large;
+.table{
+    color: #{$navbar-light-color};
+    background-color: #{$navbg-light-color};
+    border-radius: 5%;
+    font-size: 1rem ;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    border-color: #49274A;
 }
 
+// if on a small width device it flips the orientation of the table to fit
+@media (max-width: 570px) {
+    tbody{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+    td, th{
+        flex:1;
+    }
+}
+
+// dark mode settings
+/* first bit is the general background, the rest is all navbar related */
+.dark-mode{
+    background-color: #062F4F;
+    .container-fluid{
+        background-color: #{$navbg-dark-color};
+    }
+
+    .navbar{
+        color: #{$navbar-dark-color};
+        :hover{
+            color: #{$navbar-dark-hover-color};
+        }
+        :disabled{
+            color: #{$navbar-dark-disabled-color};
+        }
+        :active{
+            color: #{$navbar-dark-active-color};
+        }
+    }
+    
+    .navbar-brand{
+        color: #{$navbar-dark-brand-color};
+        :hover{
+            color: #{$navbar-dark-brand-hover-color};
+        }
+    }
+    
+    .nav-link{
+        color: #{$navbar-dark-color};
+        :hover{
+            color:#{$navbar-dark-hover-color};
+        }
+        :disabled{
+            color:#{navbar-dark-disabled-color};
+        }
+    }
+    
+    .navbar-toggler{
+        border-color: #{$navbar-dark-toggler-border-color};
+    }
+
+    .table{
+        color: #{$navbar-dark-color};
+        background-color: #{$navbg-dark-color};
+    }
+}
+
+/* main-body class */
+.dark-modeb{
+    background-color: #062F4F;
+    color: white;
+}

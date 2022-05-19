@@ -37,5 +37,5 @@ def page5():
 @my_view.route('/javascript')
 @my_view.route('/home')
 @my_view.route('/index')
-def js_redirect():
+def home_redirect():
     return redirect(url_for('my_view.home'))

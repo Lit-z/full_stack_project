@@ -6,10 +6,11 @@
 }
 
 body {
-  background-color: yellow;
+  background-color: #F8EEE7;
+  color: #49274A;
 }
 
-h1, h2 {
+h1, h6, h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,11 +20,20 @@ h1, h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 3rem;
 }
 
-h3 {
+h3, p {
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 2.2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 p {
@@ -31,53 +41,53 @@ p {
 }
 
 .container-fluid {
-  background-color: #062F4F;
+  background-color: #F4DECB;
 }
 
 .navbar {
-  color: #B82601;
+  color: #49274A;
 }
 
 .navbar :hover {
-  color: #813772;
+  color: #94618E;
 }
 
 .navbar :disabled {
-  color: white;
+  color: grey;
 }
 
 .navbar :active {
-  color: white;
+  color: #49274A;
 }
 
 .navbar-brand {
   margin: 1rem;
   font-size: 1.5rem;
-  color: white;
+  color: #49274A;
 }
 
 .navbar-brand :hover {
-  color: white;
+  color: #49274A;
 }
 
 .nav-link {
   padding-left: 0.5rem;
-  color: #B82601;
+  color: #49274A;
 }
 
 .nav-link :hover {
-  color: #813772;
+  color: #94618E;
 }
 
 .nav-link :disabled {
-  color: navbar-disabled-color;
+  color: navbar-light-disabled-color;
 }
 
 .navbar-toggler {
   padding-top: 0.25rem;
   padding-left: 0.75rem;
   font-size: 1.5rem;
-  border-color: #813772;
+  border-color: #94618E;
   border-radius: 0.25rem;
   -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
   transition: -webkit-box-shadow 0.15s ease-in-out;
@@ -102,7 +112,7 @@ a.anchor {
   border-radius: 5%;
 }
 
-.img-txt {
+.img-txt, .top-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,13 +122,109 @@ a.anchor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
-.col {
-  color: red;
+.table {
+  color: #49274A;
+  background-color: #F4DECB;
+  border-radius: 5%;
+  font-size: 1rem;
+  margin-left: 10%;
+  width: 80%;
+  text-align: center;
+  border-color: #49274A;
+}
+
+@media (max-width: 570px) {
+  tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  td, th {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+/* first bit is the general background, the rest is all navbar related */
+.dark-mode {
   background-color: #062F4F;
-  border-color: white;
-  border-radius: 10%;
-  font-size: large;
+}
+
+.dark-mode .container-fluid {
+  background-color: #813772;
+}
+
+.dark-mode .navbar {
+  color: white;
+}
+
+.dark-mode .navbar :hover {
+  color: #062F4F;
+}
+
+.dark-mode .navbar :disabled {
+  color: grey;
+}
+
+.dark-mode .navbar :active {
+  color: white;
+}
+
+.dark-mode .navbar-brand {
+  color: white;
+}
+
+.dark-mode .navbar-brand :hover {
+  color: white;
+}
+
+.dark-mode .nav-link {
+  color: white;
+}
+
+.dark-mode .nav-link :hover {
+  color: #062F4F;
+}
+
+.dark-mode .nav-link :disabled {
+  color: navbar-dark-disabled-color;
+}
+
+.dark-mode .navbar-toggler {
+  border-color: #062F4F;
+}
+
+.dark-mode .table {
+  color: white;
+  background-color: #813772;
+}
+
+/* main-body class */
+.dark-modeb {
+  background-color: #062F4F;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
