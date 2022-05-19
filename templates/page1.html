@@ -1,7 +1,84 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="main-body">
 
-<h2>if only it had content 1</h2>
+<div>
+    <a class="anchor" id="p1-top"></a><h2>Detection Methods</h2><br>
+    <h5>There are five methods currently used to discover exoplanets, two of these are responsible for the majority of the discoveries so far, these are the radial velocity and transit methods.</h5><br>
+</div>
+<br>
 
+<div><a class="anchor" id="rad-v"></a><h3>Radial Velocity</h3>
+    <br><p>For the radial velocity method it takes into account the interaction through gravity of the star and planet in orbit.</p>
+    <br>
+    <img src="{{url_for('static', filename='images/planetorbit.gif')}}", alt="animation of planet orbiting star", title="wobble of orbit" class="img-centre"> 
+    <p class="img-txt">Exaggerated orbit of planet and star</p>
+    <br><br>
+    <p>The above animation exaggerates the size of the effect but it shows how the effect of gravity works on two objects in orbit with each other. The large object which in our system ‘the star’, doesn’t move too much while the much smaller object ‘the planet’, races round in an orbit that you would come to expect based on experiences here on Earth, where a full orbit signifies an entire year. This slight movement of the star can appear as a ‘wobble’ that will be proportional to the size of the planet causing the effect, for example in our solar system Jupiter will cause a much greater effect on the Sun than Earth would. The ‘wobble’ of a star could tell us if it has planets, how many there are and the size of them.
+    <br><br>
+    To be able to see this effect in observations requires using knowledge of the ‘Doppler shift’. Different forms of energy including light, sound, heat, radio travel in waves which if there is movement by the object emitting them they can be stretched and squashed in frequency. A good example of this is when you hear sirens from a moving emergency vehicle, the pitch of what you can hear changes if you compare it approaching you to it moving away from you. For light this effect will slightly change the colour it produces. When an object is moving towards you the waves are squashed closer together resulting in higher pitched sounds, for light this will make it appear more blue in colour. While if the object is moving away the waves are more spaced apart resulting in a lower pitched sound and making light look more reddish. You might have heard the term redshift before which is referencing this effect to tell us the motion of an object towards or away from us.</p><br>
+    <img src="{{url_for('static', filename='images/radv-method.jpg')}}", alt="showing red vs blue shift", title="Difference of red and blue shift" class="img-centre"> 
+    <p class="img-txt">Exaggerated visual of the star 'wobble' being towards or away from us creates different colour wavelength shifts.</p>
+</div>
+<br>
+
+<div><a class="anchor" id="transit"></a><h3>Transit</h3>
+    <br><p>he transit method has been the most successful method so far for how many exoplanets it has helped identify. It is the effect of when an object moves in front of another object that is producing light, it will dim the effect by blocking some of that light by a measurable amount. One of the most spectacular examples of this is a solar eclipse where the moon transits across the sun and due to the ratio of their respective distances and sizes it can cause a total eclipse rather than just a partial one. The planets closer to the sun than us (Mercury, Venus) also cause transits from our perspective in the solar system where they appear as a shadow moving across the sun, this is the same concept that is used for planets transiting across their parent stars.
+    <br><br>
+    There is more information that can be gathered from a transit of an exoplanet that can help determine some of its properties. If the observer is measuring the amount of light emitted by a star over time, known as a ‘light curve’ there will be a larger drop on this measure if the planet that causes the transit is bigger. While if the planet is further away from its star, it will take longer to transverse across the entire star creating a longer event on the light curve. This can get complicated if multiple planets transition across the star during the same time frame as they’ll be overlapping effects but it shouldn’t be anything that can’t be figured out, it’ll just take more work to do so. 
+    <br><br>
+    What a transit can also tell an observer is information about the composition of a planet’s atmosphere or temperature. As when a planet transits across a star, some of the light will pass through the atmosphere and affect the colours of this part of the light which can be used to calculate details on its composition due to knowing how light passing through different elements behaves here on Earth.</p>
+</div>
+<br>
+
+<div><a class="anchor" id="imaging"></a><h3>Direct Imaging</h3>
+    <br><p>Trying directly imaging an exoplanet with them being so far away and millions of times dimmer than the star that they’ll orbit makes for a very difficult challenge.To overcome this challenge the observer needs a method of blocking the light from the star. 
+    <br><br>
+    There are two main methods of doing this, one is called coronagraphy where there is a device inside the telescope designed to prevent light from the star from reaching the telescope’s detector. They are built as additions or add-ons to telescopes and are effective for ground based equipment. While the other method is to use a starshade which is an object positioned in front of the telescope preventing light from even reaching the telescope, for this idea to work on a space based telescope it would have to be a separate spacecraft that positions itself correctly in distance and angle for the observing telescope.</p><br>
+    <img src="{{url_for('static', filename='images/starshade.jpg')}}", alt="image of starshade", title="Artist impression of a starshade" class="img-centre"><br> 
+    <p class="img-txt">Starshade</p>
+</div>
+<br><br>
+
+<div><a class="anchor" id="micro"></a><h3>Gravitational Microlensing</h3>
+    <br><p>Gravitational microlensing is based on the effect that gravity of large objects can warp the fabric of space around them. The effect of this can cause light to distort and change direction when affected by the gravity of a massive object like a star or planet.
+    <br><br>
+    The result of this change of direction can have different results, one of them is where it can bend the light to effectively focus light like the lens in a magnifying glass, which can make the star appear temporarily brighter before fading again as the positions change. These events are unpredictable so they require long term observations on areas of the sky. This effect can also be caused by free floating planets (ones not in orbit of a star) which gives us information on estimating how common planets like this are.</p>
+</div>
+<br><br>
+
+<div><a class="anchor" id="astro"></a><h3>Astrometry</h3>
+    <br><p>Astrometry is a similar idea to radial velocity in that it is looking for the wobble of stars, instead of using the doppler shift this is comparing the wobble of a star in its apparent position in the sky. Which means it is comparing its position to nearby stars as a frame of reference. This is the most difficult method to do, as the accuracy and precise optics required to detect such a small movement is really high. Especially difficult to achieve from the Earth’s surface due to the atmosphere distorting and bending light.</p>
+</div>
+<br>
+
+<div>
+    <h3>Discovered Exoplanets by Method</h3>
+</div> 
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">Method</div>
+        <div class="col">Radial Velocity</div>
+        <div class="col">Transit</div>
+        <div class="col">Direct Imaging</div>
+        <div class="col">Microlensing</div>
+        <div class="col">Astrometry</div>
+    </div>
+        <div class="row">
+        <div class="col">Total Discovered</div>
+        <div class="col">927</div>
+        <div class="col">3854</div>
+        <div class="col">59</div>
+        <div class="col">130</div>
+        <div class="col">1</div>
+    </div>
+</div>
+<br>
+
+</div>
 {% endblock %}
+
+<!-- detection methods -->

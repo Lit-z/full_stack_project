@@ -2,7 +2,12 @@
 
 {% block content %}
 
-<h2>content error</h2>
-<h3>{{ e }}</h3>
+<div>
+    <img src="{{url_for('static', filename='images/404.png')}}", alt="image of black hole", title="Well done you made it to an event horizon" class="img-centre"> <br><br>
+    <h2>This page got lost in a black hole</h2><br><br>
+    <h6>{{ e }}</h6>
+</div>
 
 {% endblock %}
+
+<!-- 404 error redirect page -->

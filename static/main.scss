@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+// font-family: 'Lato', sans-serif;
+@import "navbar";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: yellow;
+}
+
+h1, h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+// navbar settings, variables set in navbar file
+.container-fluid{
+    background-color: #{$navbg-light-color};
+}
+
+.navbar{
+    color: #{$navbar-light-color};
+    :hover{
+        color: #{$navbar-light-hover-color};
+    }
+    :disabled{
+        color: #{$navbar-light-disabled-color};
+    }
+    :active{
+        color: #{$navbar-light-active-color};
+    }
+}
+
+.navbar-brand{
+    margin: #{$navbar-brand-margin-end};
+    font-size: #{$navbar-brand-font-size};
+    color: #{$navbar-light-brand-color};
+    :hover{
+        color: #{$navbar-light-brand-hover-color};
+    }
+}
+
+.nav-link{
+    padding-left: #{$navbar-nav-link-padding-x};
+    color: #{$navbar-light-color};
+    :hover{
+        color:#{$navbar-light-hover-color};
+    }
+    :disabled{
+        color:#{navbar-disabled-color};
+    }
+}
+
+.navbar-toggler{
+    padding-top: #{$navbar-toggler-padding-y};
+    padding-left: #{$navbar-toggler-padding-x};
+    font-size: #{$navbar-toggler-font-size};
+    border-color: #{$navbar-light-toggler-border-color};
+    border-radius: #{$navbar-toggler-border-radius};
+    transition: #{$navbar-toggler-transition};
+    :focus{
+    width: #{$navbar-toggler-focus-width};
+    }
+}
+
+// jumplink offsets to account for navbar overlap
+a.anchor{
+    padding-top: 84px;
+    margin-top: -84px;
+    display: inline-block;
+}
+
+// image settings, non carousel
+.img-centre{
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 5%;
+}
+
+// text below images
+.img-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// table settings
+.col{
+    color: red;
+    background-color: $navbg-light-color;
+    border-color: white;
+    border-radius: 10%;
+    font-size: large;
+}
+

@@ -1,0 +1,35 @@
+// sizes
+
+$navbar-nav-link-padding-x:         .5rem;
+
+$navbar-brand-font-size:            1.5rem;
+$navbar-brand-margin-end:           1rem;
+
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-font-size:          1.5rem;
+$navbar-toggler-border-radius:      .25rem;
+$navbar-toggler-focus-width:        .25rem;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+// colours
+// dark-mode
+$navbar-dark-color:                 white;
+$navbar-dark-hover-color:           white;
+$navbar-dark-active-color:          white;
+$navbar-dark-disabled-color:        white;
+$navbar-dark-toggler-border-color:  white;
+$navbg-dark-color:                  blue;
+
+// light-mode
+$navbar-light-color:                #B82601;
+$navbar-light-hover-color:          #813772;
+$navbar-light-active-color:         white;
+$navbar-light-disabled-color:       white;
+$navbar-light-toggler-border-color: #813772;
+$navbg-light-color:                 #062F4F;
+
+$navbar-light-brand-color:                $navbar-light-active-color;
+$navbar-light-brand-hover-color:          $navbar-light-active-color;
+$navbar-dark-brand-color:                 $navbar-dark-active-color;
+$navbar-dark-brand-hover-color:           $navbar-dark-active-color;

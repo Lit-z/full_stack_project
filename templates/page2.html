@@ -1,7 +1,64 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="main-body">
+<div>
+    <a class="anchor" id="p2-top"></a><h2>Types of Exoplanet</h2><br>
+    <h5>Currently exoplanets are categorised into four main types, Gas giant, Neptunian, super-Earth and terrestrial.</h5>
+<br>
+</div>
 
-<h2>if only it had content 2</h2>
+<div>
+    <img src="{{url_for('static', filename='images/planet_types.jpg')}}", alt="image of planet types", title="Variety of Exoplanets" class="img-centre"> 
+    <p class="img-txt">Visualisation of the different types of planets, credit: NASA/JPL-Caltech</p>
+</div>
+<br>
 
+<div><a class="anchor" id="gas"></a><h3>Gas Giants</h3>
+    <br><p>Gas Giants like the ones within our own solar system are around the size of Jupiter or Saturn. However there are variations that differ from the gas giants in our solar system. As one of the first types of exoplanets discovered were ‘Hot Jupiters’ which orbit close to their stars resulting in temperatures into the thousands of degrees Celsius.The orbits between these large planets and star is so close that it causes pronounced wobble in the stars, creating a measurable shift in the spectrum of light emitted by the stars that can be detected through the radial velocity method.</p>
+</div>
+<br>
+
+<div><a class="anchor" id="nept"></a><h3>Neptunian</h3>
+    <br><p>Neptunian planets are usually around the size of Uranus or unsurprisingly considering the name Neptune. The structure of these planets consist of outer atmospheres being hydrogen and helium dominated with rocky cores. However there have been discoveries of mini-Neptunes where their sizes are smaller than Neptune but still bigger than Earth which is a type of planet that doesn’t exist in our solar system. It can be difficult to learn about atmospheric compositions for planets that are distant from their star as information about them is gathered through analysing starlight passing through the atmosphere. As it passes through certain wavelengths of light are absorbed by atoms and molecules blocking it from the view of the observer (telescope). This analysis is called spectroscopy and it would then be used to determine what makes up the atmosphere. With neptunian exoplanets they often have thick clouds that block any light from passing through hiding the signature of the molecules in the atmosphere.</p>
+</div>
+<br>
+
+<div><a class="anchor" id="super"></a><h3>Super-Earths</h3>
+    <br><p>Super-Earths are terrestrial planets that may or may not include an atmosphere. These are between two and times the mass of Earth, yet the name doesn’t indicate anything about their structure, in fact this is clouded in a lot of uncertainty partly due to their being nothing similar in our own solar system. Research suggests there could be variance including water worlds, snowball planets, drastic lava flows, Neptune like in gas structure or still contain a rocky surface. There are even ones that are hot enough to vaporise metal (K2-131b). Exoplanets at the upper limits of the super-Earth size limit can also be referred to as sub-Neptunes, or mini-Neptunes.</p>
+</div>
+<br>
+
+<div><a class="anchor" id="terr"></a><h3>Terrestrial</h3>
+    <br><p>Terrestrial planets are up to twice the size of Earth or smaller with a structure of rock, water, iron, carbon or silicate, they could potentially contain atmospheres, oceans or other signs of habitability like here on Earth. In our solar system Mercury, Venus, Earth and Mars are considered terrestrial planets. These have been the rarest type of exoplanet to be discovered which is understandable if we consider that they are the smallest type of planet. There is a curious gap in the planet sizes called the Fulton gap that planets of a size range between 1.5 and 2 times the size of Earth are rare. This suggests that there is something to be discovered about planet formation to why this is the case.</p>
+</div>
+<br>
+
+<div>
+    <h3>Discovered Exoplanets by Type</h3>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">Exoplanet Type</div>
+        <div class="col">Gas Giant</div>
+        <div class="col">Neptunian</div>
+        <div class="col">Super-Earth</div>
+        <div class="col">Terrestrial</div>
+    </div>
+    <div class="row">
+        <div class="col">Total Discovered</div>
+        <div class="col">1503</div>
+        <div class="col">1764</div>
+        <div class="col">1571</div>
+        <div class="col">187</div>
+    </div>
+</div>
+<br>
+
+</div>
 {% endblock %}
+
+<!-- categories -->
+

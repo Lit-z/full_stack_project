@@ -1,4 +1,124 @@
-body {
-    color: crimson;
-    background-color: deepskyblue;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
+
+body {
+  background-color: yellow;
+}
+
+h1, h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.container-fluid {
+  background-color: #062F4F;
+}
+
+.navbar {
+  color: #B82601;
+}
+
+.navbar :hover {
+  color: #813772;
+}
+
+.navbar :disabled {
+  color: white;
+}
+
+.navbar :active {
+  color: white;
+}
+
+.navbar-brand {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-brand :hover {
+  color: white;
+}
+
+.nav-link {
+  padding-left: 0.5rem;
+  color: #B82601;
+}
+
+.nav-link :hover {
+  color: #813772;
+}
+
+.nav-link :disabled {
+  color: navbar-disabled-color;
+}
+
+.navbar-toggler {
+  padding-top: 0.25rem;
+  padding-left: 0.75rem;
+  font-size: 1.5rem;
+  border-color: #813772;
+  border-radius: 0.25rem;
+  -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.navbar-toggler :focus {
+  width: 0.25rem;
+}
+
+a.anchor {
+  padding-top: 84px;
+  margin-top: -84px;
+  display: inline-block;
+}
+
+.img-centre {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  border-radius: 5%;
+}
+
+.img-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col {
+  color: red;
+  background-color: #062F4F;
+  border-color: white;
+  border-radius: 10%;
+  font-size: large;
+}
+/*# sourceMappingURL=main.css.map */

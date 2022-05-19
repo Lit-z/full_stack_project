@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="main-body">
 
-<h2>welcome home to zero content</h2>
+<div class="anchor" id="home-top"><h1>What is an exoplanet?</h1></div>
+<div>
+    <p>An exoplanet is a planet that orbits a star outside of our solar system</p><br>
+    <img src="{{url_for('static', filename='images/trappist-1.jpg')}}", alt="image of exoplanets of the trappist-1 system", title="" class="img-txt"><br> 
+    <p>This artist's concept shows what each of the TRAPPIST-1 planets may look like, based on available data about their sizes, masses and orbital distances. It makes it the system with the most confirmed exoplanets.</p>
+</div>
 
+</div>
 {% endblock %}
+
+<!-- home -->
