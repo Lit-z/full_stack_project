@@ -103,14 +103,13 @@ a.anchor{
     border-radius: 5%;
 }
 
-// text below images
-.img-txt, .top-btn{
+// text below images, some buttons and admin login form want the same settings
+.img-txt, .top-btn, .form-box{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 
 // table settings
 .table{

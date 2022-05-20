@@ -112,7 +112,7 @@ a.anchor {
   border-radius: 5%;
 }
 
-.img-txt, .top-btn {
+.img-txt, .top-btn, .form-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
