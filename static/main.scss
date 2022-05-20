@@ -7,11 +7,18 @@
     font-family: 'Lato', sans-serif;
 }
 
+// bg-colour variables
+$bg-color-light:#F8EEE7;
+$bg-color-dark: #062F4F;
+// main colour scheme, other variables set within navbar.scss, if were to rewrite
+// this would improve the naming, just the navbar part was produced first and time
+// constraints
 body{
-    background-color: #F8EEE7;
-    color: #49274A;
+    background-color: #{$bg-color-light};
+    color: #{$navbar-light-color};
 }
 
+// mostly text sizes/ positions
 h1, h2{
     display: flex;
     align-items: center;
@@ -38,7 +45,7 @@ p{
     font-size: 1.4rem;
 }
 
-// navbar settings, variables set in navbar file
+// navbar settings, variables set in navbar.scss file
 .container-fluid{
     background-color: #{$navbg-light-color};
 }
@@ -88,7 +95,8 @@ p{
     }
 }
 
-// jumplink offsets to account for navbar overlap
+// jumplink offsets to account for navbar overlap, checked in dev tools that 
+// it's always 84px required
 a.anchor{
     padding-top: 84px;
     margin-top: -84px;
@@ -120,7 +128,7 @@ a.anchor{
     margin-left: 10%;
     width: 80%;
     text-align: center;
-    border-color: #49274A;
+    border-color: #{$navbar-light-active-color};
 }
 
 // if on a small width device it flips the orientation of the table to fit
@@ -143,7 +151,7 @@ a.anchor{
 // dark mode settings
 /* first bit is the general background, the rest is all navbar related */
 .dark-mode{
-    background-color: #062F4F;
+    background-color: #{$bg-color-dark};
     .container-fluid{
         background-color: #{$navbg-dark-color};
     }
@@ -188,8 +196,9 @@ a.anchor{
     }
 }
 
+// other dark mode setting
 /* main-body class */
 .dark-modeb{
-    background-color: #062F4F;
-    color: white;
+    background-color: #{$navbar-dark-hover-color};
+    color: #{$navbar-dark-color};
 }

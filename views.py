@@ -1,4 +1,4 @@
-from flask import render_template, redirect, url_for, Blueprint
+from flask import render_template, redirect, url_for, Blueprint, abort
 
 # creates the blueprint
 my_view = Blueprint('my_view',__name__)
@@ -6,6 +6,7 @@ my_view = Blueprint('my_view',__name__)
 # setting up the structure of the backend
 @my_view.route('/')
 def home():
+    #### abort(500)    # Only uncomment this if wanting to test the 500 error page
     return render_template('home.html')
 
 @my_view.route('/admin')
@@ -24,7 +25,7 @@ def page2():
 def page3():
     return render_template('page3.html')
 
-@my_view.route('/Data')
+@my_view.route('/Naming')
 def page4():
     return render_template('page4.html')
 
@@ -39,3 +40,13 @@ def page5():
 @my_view.route('/index')
 def home_redirect():
     return redirect(url_for('my_view.home'))
+
+# redirect for page 4 for some obvious similar names (pun intended)
+# in practice could make a long list of all the different potential pages to
+# for each individual page, due to similar names or typos, trying to reduce the 
+# amount of errors caused by the user where they'd end up on the 404 page instead
+@my_view.route('/Names')
+@my_view.route('/Name')
+def p4_redirect():
+    return redirect(url_for('my_view.page4'))
+

@@ -3,11 +3,12 @@
 {% block content %}
 <br>
 <div class="main-body">
-    <img src="{{url_for('static', filename='images/500.png')}}", alt="image of black hole", title="Well done you made it to an event horizon" class="img-centre"> <br><br>
     <h2>A black hole consumed the server</h2><br><br>
     <h6>{{ e }}</h6>
+    <img src="{{url_for('static', filename='images/500.png')}}", alt="image of black hole", title="Well done you made it to an event horizon" class="img-centre"> <br><br>
+
 </div>
 <br>
 {% endblock %}
 
-<!-- 500 error redirect page -->
+<!-- 500 error redirect page with an image of black hole -->
