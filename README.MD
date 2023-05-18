@@ -1,7 +1,7 @@
 Full stack project work, other Code Nation related activties below      
 
 This Repo/ Portfolio - https://github.com/Lit-z/full_stack_project      
-Deployed Project - https://innovate-flask-site.herokuapp.com/         
+Deployed Project - https://innovate-flask-site.herokuapp.com/  (removed?)       
 Kanban Board - https://trello.com/b/JMDmJpAB/full-stack-site        
 Innovate Repo - https://github.com/Lit-z/innovate          
 Backend Project - https://github.com/Lit-z/innovate/tree/main/javasite_project     
